@@ -12,6 +12,7 @@ func main() {
 	// fmt.Println("The Items in X are:", x, "The Length of X is:", len(x), "The Capacity of X is:", cap(x))
 	// fmt.Println("The Items in Y are:", y, "The Length of Y is:", len(y), "The Capacity of Y is:", cap(y))
 	emojeTxt()
+	numbers()
 }
 
 func emojeTxt() {
@@ -23,6 +24,15 @@ func emojeTxt() {
 	// fmt.Println(s3)
 	// fmt.Println(s4)
 
-	var s string = "H2"
-	fmt.Println(len(s))
+	// var s string = "H2"
+	// fmt.Println(len(s))
+}
+
+func numbers() {
+	x := []int{1, 2, 3}
+	b := append(x, 4)
+	b = append(b, 5, 6, 7, 8)
+	x[2] = 10
+	fmt.Println(x)
+	fmt.Println(b)
 }

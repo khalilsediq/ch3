@@ -29,10 +29,16 @@ func emojeTxt() {
 }
 
 func numbers() {
-	x := []int{1, 2, 3}
-	b := append(x, 4)
-	b = append(b, 5, 6, 7, 8)
-	x[2] = 10
-	fmt.Println(x)
-	fmt.Println(b)
+	// x := []int{1, 2, 3}
+	// b := append(x, 4)
+	// b = append(b, 5, 6, 7, 8)
+	// x[2] = 10
+	// fmt.Println(x)
+	// fmt.Println(b)
+
+	s := []int{10, 20, 30}
+	s2 := make([]int, len(s))
+	copy(s2, s)
+	fmt.Println(s)
+	fmt.Println(s2)
 }

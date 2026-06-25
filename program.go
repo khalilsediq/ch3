@@ -61,6 +61,6 @@ func numbers() {
 	} else if age > 18 {
 		println(name + " is an adult.")
 	} else {
-		println(name + " is not an adult.")
+		println(name + " is not an adult. and is infact a minor and should be banned")
 	}
 }

@@ -50,4 +50,17 @@ func numbers() {
 	s4[1] = 88           // and the value of s4's 1st indes is 88 which is [1 , 88].
 	//So in the conclusion is that s2 becomes [1,2] and then the s3 appends into s2 and the s2 still curently holds one capacity so it drops 4 into himself, which he becomes s2[1,2,4]. And s3 becomes his own independent slice, so he holds s3[1,2,4,5,6]. after that we do s3[0] = 99 which the s3 0 index value becomes 99, so now s3 is [99, 2, 4,5,6]. and finaly we come to s4 which holds 2 values of [0, 0], and then we copy s1 into it so now s4 is [1,2], and then we do s4[1] = 88, which changes the s4 to [2,88]. that's it.
 
+
+
+	var age = 30
+	var name = "John"
+	var isStudent = true
+
+	if age > 18 && isStudent {
+		println(name + " is an adult student.")
+	} else if age > 18 {
+		println(name + " is an adult.")
+	} else {
+		println(name + " is not an adult.")
+	}
 }

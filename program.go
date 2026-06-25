@@ -52,7 +52,7 @@ func numbers() {
 
 
 
-	var age = 30
+	var age = 12
 	var name = "John"
 	var isStudent = true
 
